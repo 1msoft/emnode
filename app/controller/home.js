@@ -3,8 +3,16 @@
 const Controller = require('egg').Controller;
 
 class HomeController extends Controller {
-  async index() {
-    this.ctx.body = 'hi, egg';
+  async index(ctx, next) {
+    const { type } = ctx; 
+    if (type) {
+      console.log('当前type为：', type);
+    } else {
+      console.log('当前type为：', type);
+    }
+    ctx.body = {
+      message: 'hi, node',
+    };
   }
 }
 
