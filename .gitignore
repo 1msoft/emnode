@@ -57,6 +57,10 @@ typings/
 # Dotenv environment variables file
 .env
 
+# jsdoc
+jsdoc
+out
+
 # Others
 .DS_Store
 .idea/
